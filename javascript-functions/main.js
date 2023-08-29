@@ -23,16 +23,17 @@ function getArea(width, height) {
 console.log('The area is: ' + getArea(17, 42));
 
 function getFirstName(person) {
-  const name = { firstName: 'Lelouche', lastName: 'Lamperouge' };
-  const first = name.firstName;
+  const firstName = person.firstName;
 
-  return first;
+  return firstName;
 }
 
-console.log("Person's first name is: " + getFirstName(name));
+const name1 = { firstName: 'Lelouche', lastName: 'Lamperouge' };
+
+console.log("Person's first name is: " + getFirstName(name1));
 
 function getLastElement(array) {
-  const lastElement = myArray.at(-1);
+  const lastElement = array.at(-1);
 
   return lastElement;
 }
