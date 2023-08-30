@@ -61,9 +61,9 @@ function isOldEnoughToDrinkAndDrive(person) {
 }
 
 function categorizeAcidity(pH) {
-  if (pH > 0 && pH < 7) {
+  if (pH >= 0 && pH < 7) {
     return 'acid';
-  } else if (pH > 7 && pH < 14) {
+  } else if (pH > 7 && pH <= 14) {
     return 'base';
   } else if (pH === 7) {
     return 'neutral';
@@ -72,17 +72,19 @@ function categorizeAcidity(pH) {
   }
 }
 
-const yakko = 'yakko';
-const wakko = 'wakko';
-const dot = 'dot';
+const yakko = 'character 1';
+const wakko = 'character 2';
+const dot = 'character 3';
+
+console.log(yakko, wakko, dot);
 
 function introduceWarnerBro(name) {
   switch (name) {
-    case yakko:
+    case 'yakko':
       return "We're the warner brothers!";
-    case wakko:
+    case 'wakko':
       return "We're the warner brothers!";
-    case dot:
+    case 'dot':
       return "I'm cute~";
     default:
       return 'Goodnight everybody!';
@@ -98,17 +100,17 @@ const scifi = 'Star Wars';
 
 function recommendMovie(genre) {
   switch (genre) {
-    case action:
+    case 'action':
       return action;
-    case comedy:
+    case 'comedy':
       return comedy;
-    case horror:
+    case 'horror':
       return horror;
-    case drama:
+    case 'drama':
       return drama;
-    case musical:
+    case 'musical':
       return musical;
-    case scifi:
+    case 'scifi':
       return scifi;
     default:
       return 'Genre not recognized. Choose between action, comedy, horror, drama, musical';
