@@ -1,8 +1,7 @@
 /* exported initial */
 function initial(array) {
-  const newArr = [];
-  for (let i = 0; i < array.length; i++) {
-    newArr.push(array[i]);
+  if (array.length > 0) {
+    array.length = array.length - 1;
   }
-  return newArr;
+  return array;
 }
