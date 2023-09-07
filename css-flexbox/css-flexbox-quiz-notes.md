@@ -9,9 +9,9 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is the default `flex-wrap` of a `flex` container?
   nowrap
 - What axis do the `justify-content` properties work on?
-  main axis
+  main
 - What axis do the `align-items` properties work on?
-  cross axis
+  cross
 
 ## Notes
 
