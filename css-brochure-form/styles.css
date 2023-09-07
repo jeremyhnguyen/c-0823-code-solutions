@@ -29,6 +29,11 @@ button:hover {
   background-color: #000fff;
 }
 
+label {
+  font-size: 40%;
+  font-family: 'Brandon Grotesque', sans-serif;
+}
+
 p {
   font-size: 40%;
   font-family: 'Brandon Grotesque', sans-serif;
