@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+}
+
+.light {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fef9f1;
+}
+
+.off {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #444;
+  top: 200px;
+  box-shadow: 1px -3px 20px 2px #000;
+}
+
+.on {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #f9ea84;
+  top: 200px;
+  box-shadow: 1px -3px 20px 2px #ffbf00;
+}
