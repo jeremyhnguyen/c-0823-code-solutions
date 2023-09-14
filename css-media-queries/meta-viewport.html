@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- your code here 👇 -->
 
     <title>CSS Media Queries - Meta Viewport</title>
@@ -19,6 +20,12 @@
         width: 200px;
         height: 200px;
         background-color: blue;
+      }
+
+      @media only screen and (min-width: 568px) {
+        .box {
+          background-color: red;
+        }
       }
     </style>
   </head>
