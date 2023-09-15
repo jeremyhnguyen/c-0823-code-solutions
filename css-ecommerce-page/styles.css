@@ -20,6 +20,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .column-fifths {
@@ -30,9 +31,10 @@ header {
 
 img {
   float: left;
-  width: 100%;
+  min-width: 120%;
   height: 100px;
-  object-fit: cover;
+  flex-basis: 200px;
+  object-fit: contain;
 }
 
 .greyedOut {
@@ -41,4 +43,9 @@ img {
 
 .highlight {
   background-color: #fff2e7;
+}
+
+p,
+span {
+  font-size: 12px;
 }
