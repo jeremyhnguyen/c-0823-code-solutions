@@ -1,12 +1,6 @@
 // ---Object---
 
-function NewObj(value1, value2, value3) {
-  this.key1 = value1;
-  this.key2 = value2;
-  this.key3 = value3;
-}
-
-const anObject = new NewObj(1, 2, 3);
+const anObject = new Object();
 
 console.log('value of anObject:', anObject);
 console.log('typeof anObject:', typeof anObject);
