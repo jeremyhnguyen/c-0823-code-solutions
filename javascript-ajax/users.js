@@ -16,4 +16,4 @@ function getUserName(name) {
   xhr.send();
 }
 
-console.log(getUserName); // <= just to remove commit error
+getUserName();
