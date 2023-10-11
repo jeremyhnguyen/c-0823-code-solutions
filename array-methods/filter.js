@@ -9,7 +9,7 @@ function even() {
 }
 
 const evens = numbers.filter((n) => n % 2 === 0);
-console.log(evens);
+console.log('Even numbers:', evens);
 
 const names = [
   'Ada',
@@ -24,3 +24,4 @@ const names = [
 ];
 
 const noDs = names.filter((n) => !n.includes('d') && !n.includes('D'));
+console.log('No D:', noDs);
