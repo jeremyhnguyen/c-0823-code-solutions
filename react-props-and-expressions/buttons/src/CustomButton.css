@@ -1,0 +1,16 @@
+.red {
+  background-color: #f00;
+}
+
+.green {
+  background-color: #008001;
+}
+
+.sky-blue {
+  background-color: #add8e6;
+}
+
+button {
+  color: black;
+  font-weight: 600;
+}
