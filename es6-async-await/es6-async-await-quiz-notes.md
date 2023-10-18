@@ -7,21 +7,21 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What are the `async` and `await` keywords used for?
   async: declare that a function is asynchronous
 
-await: indicates JS should wait/pause until the async function completes
+  await: indicates JS should wait/pause until the async function completes
 
 - How do `async` and `await` differ from `Promise.then` and `Promise.catch`?
-  different way of formatting asynchronous function
+  different way of formatting asynchronous function. async and await throw an exception, promise.then only continues if resolved, otherwise it will .catch
 - When do you use `async`?
   use async before the function declaration, which allows usage of await
 - When do you use `await`? When do you _not_ use `await`? (What happens if you `await` a synchronous function?)
-  use await within an async function do not use await if a synchronous function
+  use await within an async function (promises) do not use await if a synchronous function (not a promise)
 
-usage will be delayed?
+  nothing will happen if awaiting a synchronous function
 
 - How do you handle errors with `await`?
   try/catch/finally
 
-catch will execute if exceptions are thrown
+  catch will execute if exceptions are thrown
 
 - What do `try`, `catch` and `throw` do? When do you use them?
   try...catch: try executes block of statements in sequence until an exception is thrown, the function will then execute the catch statement if exception is thrown. catch will be skipped if no exceptions are thrown
