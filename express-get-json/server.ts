@@ -31,9 +31,14 @@ const grades: Record<number, Grade> = {
   },
 };
 
+const gradesArray: Grade[] = [];
+
+for (const key in grades) {
+  gradesArray.push(grades[key]);
+}
+
 app.get('/api/grades', (req, res) => {
-  console.log('GET req running'); // remove later
-  res.json(grades);
+  res.json(gradesArray);
 });
 
 app.listen(port, () => {
