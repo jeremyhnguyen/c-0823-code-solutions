@@ -31,13 +31,12 @@ const grades: Record<number, Grade> = {
   },
 };
 
-const gradesArray: Grade[] = [];
-
-for (const key in grades) {
-  gradesArray.push(grades[key]);
-}
-
 app.get('/api/grades', (req, res) => {
+  const gradesArray: Grade[] = [];
+
+  for (const key in grades) {
+    gradesArray.push(grades[key]);
+  }
   res.json(gradesArray);
 });
 
