@@ -32,7 +32,18 @@ const grades: Record<number, Grade> = {
 };
 
 app.get('/api/grades', (req, res) => {
-  res.json(grades);
+  const gradesArray: Grade[] = [];
+
+  for (const key in grades) {
+    gradesArray.push(grades[key]);
+  }
+  res.json(gradesArray);
+});
+
+app.delete('/api/grades/:id', (req, res) => {
+  // req.params: { 'id': `${grades[key].id}`}
+  delete grades[req.params.id];
+  res.sendStatus(204);
 });
 
 app.listen(port, () => {
