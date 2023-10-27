@@ -1,5 +1,5 @@
 import './App.css';
-import PokemonList from './PokemonList.tsx';
+import { PokemonList, Pokemon } from './PokemonList.tsx';
 
 const pokedex: Pokemon[] = [
   { number: '001', name: 'Bulbasaur' },
