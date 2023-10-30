@@ -6,7 +6,8 @@ export function RegistrationFormControlled() {
   return (
     <form
       onSubmit={(event) => {
-        event.preventDefault(), console.log(username, password);
+        event.preventDefault();
+        console.log(username, password);
       }}>
       <label>
         {' '}

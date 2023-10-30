@@ -1,6 +1,6 @@
 import './App.css';
-import { RegistrationFormUncontrolled } from './Uncontrolled';
-import { RegistrationFormControlled } from './Controlled';
+import { RegistrationFormUncontrolled } from './RegistrationFormUncontrolled';
+import { RegistrationFormControlled } from './RegistrationFormControlled';
 
 function App() {
   return (
