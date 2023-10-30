@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import {ValidatedInput} from './ValidatedInput.tsx';
 export function RegistrationFormControlled() {
   const [username, setUsername] = useState('goodbye');
   const [password, setPassword] = useState('world');
