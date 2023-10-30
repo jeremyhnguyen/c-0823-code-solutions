@@ -1,25 +1,27 @@
 import { useState } from 'react';
-import { FaXmark } from "react-icons/fa6";
-import { FaCheck } from "react-icons/fa6";
-
 export function ValidatedInput() {
-  const [password, setPassword] = useState<string>('');
+  const [password, setPassword] = useState('');
+  function validatePassword(): string | undefined {
+    if (password.length === 0) return 'Password is required';
+    if (password.length < 8) return 'Password must be 8 characters';
+    if (!password.match(/[A-Z]/)) return 'Requires uppercase letter';
+    if (!password.match(/[0-9]/)) return 'Requires a number';
+    if (!password.match(/[!@#$%^&*()_=]/)) return 'Requires special symbol';
+    return undefined;
+  }
+  const error = validatePassword();
   return (
-    <div className="flex flex-col">
-        <label>
-          {' '}
-          Password
-          <input
-            id="pass"
-            type="password"
-            value={password}
-            onChange={(event) => setPassword(event.target.value)}
-          />
-        </label>
-        {password.length >= 8 && <FaCheck />}
-        {password.length === 0 && <p>A password is required.</p>}
-        {(password.length > 0 && password.length <8) && <FaXmark />}
-        {(password.length > 0 && password.length < 8) && <p>Password must be 8 characters.</p>}
+    <div className="input-group m-5">
+      <label>
+        Password:
+        <input
+          type="text"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          className={`form-control ${error ? 'is-invalid' : 'is-valid'}`}
+        />
+        {error && <div className="invalid-tooltip">{error}</div>}
+      </label>
     </div>
   );
 }
