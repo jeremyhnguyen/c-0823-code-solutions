@@ -9,9 +9,10 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is the default request method used by `fetch()`?
   GET
 - How do you specify the request method (`GET`, `POST`, etc.) when calling `fetch`?
-  you can list it as an option (2nd parameter)
+  you can list it as an option (2nd argument)
 - How does `fetch` report errors?
-  resolves with ok property set to false
+  1. resolves with ok property set to false
+  2. try/catch
 
 ## Notes
 
